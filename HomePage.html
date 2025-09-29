@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo" onclick="toggleSidebar()">
+            <img src="image/Logo3.png" alt="EA Logo">
+        </div>
+
+        <div class="search-area">
+            <select class="categories">
+                <option>All Categories</option>
+                <option>Protein</option>
+                <option>Collagen</option>
+                <option>Vitamins</option>
+            </select>
+
+            <input type="text" placeholder="Search products..." class="seach-bar">
+        </div>
+
+        <div class="right">
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Banner Section-->
+    <section class="banner">
+        <div class="banner_left">
+            <img src="image/Group 1261154065.png" alt="banner_left">
+            <img src="image/Frame 44.png" alt="Frame 44">
+        </div>
+
+        <div class="banner_right">
+            <img src="image/Group 1261154068.png" alt="banner_right">
+            <div class="vertical_strip">
+                <img src="image/side cat.png" alt="vertical_strip">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Deals-->
+    <section class="top_deals">
+        <img src="image/Group 1261153844.png" alt="top_deals">
+    </section>
+    <!-- Shop by Goal-->
+    <section class="shop_by_goal">
+        <img src="image/Frame 296.png" alt="shop_by_goal">
+    </section>
+    <!-- Take on the day-->
+    <section class="take_on_day">
+        <img src="image/Frame 1261153689.png" alt="take_on_day">
+
+    </section>
+    <!-- Shop by sports-->
+    <section class="shop_by_sports">
+        <img src="image/Frame 302.png" alt="shop_by_sports">
+
+    </section>
+    <section class="sports_hero">
+        <img src="image/Athlete Scrol.png" alt="sports_hero">
+    </section>
+
+    <section class="top_brands">
+        <img src="image/Group 1261153841.png" alt="top_brands">
+    </section>
+
+    <section class="last">
+        <img src="image/Group 1261153834.png" alt="">
+    </section>
+
+    <!--
+     <div class="logo" onclick="toggleSidebar()"></div>
+     <div id="sidebar" class="sidebar">
+        <img src="image/Group 1261154072.png" alt="Sidebar Menu"/>
+     </div>
+
+       -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="images/Logo3.png" alt="Logo" class="logo">
+
+            <span class="close-btn" onclick="toggleSidebar()">×</span>
+        </div>
+        <ul class="menu">
+            <li>Rank
+                <span class="arrow">˅</span>
+            </li>
+
+            <li>Sign Up Deals
+                <span class="arrow">˅</span>
+            </li>
+            <li>Top 10
+                <span class="arrow">˅</span>
+            </li>
+            <li>Shop by Sports
+                <span class="arrow">˅</span>
+            </li>
+            <li>Contact Us
+                <span class="arrow">˅</span>
+            </li>
+        </ul>
+    </aside>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
+
+</body>
+
+
+</html>
